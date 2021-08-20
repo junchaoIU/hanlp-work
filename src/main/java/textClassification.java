@@ -27,7 +27,7 @@ public class textClassification {
                     System.out.println("第"+ count +"行："+ linestr +"分词完毕");
                     count+=1;
                     System.out.println(item);
-                        stringBuffer.append(item);
+                        stringBuffer.append(item.toString().substring(1,item.toString().length()-1));
                         stringBuffer.append("\n");
                 }
             } catch (Exception exception) {
